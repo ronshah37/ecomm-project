@@ -1,0 +1,154 @@
+
+.color-buttons {
+  padding: 0.2em 0.5em;
+  margin-right: 1em;
+}
+
+.color-buttons:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.underline-link {
+  text-decoration: underline;
+}
+
+.questions {
+  width: 95vw;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.toggle-menu, .menu {
+  position: absolute;
+}
+
+.menu {
+  top: 1em;
+}
+
+.gallery {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(88, 88, 88, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #868686;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.img-bg {
+  opacity: 0.6;
+}
+
+
+button.color-buttons.white {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+button.color-buttons.black {
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #000000;
+}
+
+button.color-buttons.beige {
+  border: 1px solid #000000;
+  background-color: rgb(240, 195, 111);
+  color: rgb(240, 195, 111);
+}
+
+@media screen and (min-width: 70em) {
+  .product-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+
+  .toggle-menu, .menu {
+    position: unset;
+  }
+
+.prev, .next {
+  background-color: transparent;
+  color: #949494;
+}
+
+  span.material-icons-round.nav-toggle{
+    display: none;
+  }
+
+  .product-details {
+    padding-left: 10em;
+  }
+  .add-buttons {
+    display: flex;
+  }
+  .product-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (min-width: 90em) {
+
+}
