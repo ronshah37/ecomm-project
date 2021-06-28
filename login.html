@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>
+      .nav {
+        display: flex;
+        list-style: none;
+      }
+      li {
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <h1>Login</h1>
+    Email:
+    <input type="text" id="email" />
+    <br /><br />
+    password:
+    <input type="password" id="password" />
+    <br /><br />
+    <input type="submit" value="Login" id="login" />
+    <p>No Account? <a href="signup.html"> Create One! </a></p>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="js/login.js" type="module"></script>
+  </body>
+</html>

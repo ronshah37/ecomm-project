@@ -29,7 +29,28 @@
         />
       </a>
       <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary" class="navigation">
+      <nav id="no-auth" aria-label="Primary" class="navigation">
+        <button class="toggle-menu" id="toggle-menu">
+          <span class="menu-icon material-icons-round">menu</span>
+          <span class="close-icon material-icons-round">close</span>
+        </button>
+
+        <ul class="menu" id="menu">
+          <li class="dropdown">
+            <a class="menu-links" href="#">Products</a>
+            <div class="dropdown-content">
+              <a href="#">Beds</a>
+              <a href="#">Sofa beds</a>
+              <a href="#">Mattresses</a>
+            </div>
+          </li>
+          <li><a class="menu-links" href="#">Offers</a></li>
+          <li><a class="menu-links" href="#">What's New</a></li>
+          <li><a class="menu-links" href="login.html">Login/ Sign up</a></li>
+        </ul>
+      </nav>
+
+      <nav id="auth" aria-label="Primary" class="navigation">
         <button class="toggle-menu" id="toggle-menu">
           <span class="menu-icon material-icons-round">menu</span>
           <span class="close-icon material-icons-round">close</span>
@@ -557,6 +578,10 @@
         <p class="copyright">Copyright © Siesta - 2021</p>
       </nav>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="js/authentication.js" type="module"></script>
   </body>
 </html>
