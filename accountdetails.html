@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <style>
+      .nav {
+        display: flex;
+        list-style: none;
+      }
+      li {
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </nav>
+    <h1>Account</h1>
+    First Name:
+    <input type="text" id="firstname" />
+    <br /><br />
+    Last Name:
+    <input type="text" id="lastname" />
+    <br /><br />
+    <input type="submit" value="Update" id="update" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+    <script src="js/accountdetails.js" type="module"></script>
+  </body>
+</html>
