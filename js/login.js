@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     firebase.auth().onAuthStateChanged(function (user) {
+      console.log("Firebase current user", firebase.auth().currentUser);
       if (user) {
         window.location = "index.html";
       }

@@ -5,7 +5,8 @@ import './firebase-authentication.js';
     const noAuth = document.getElementById("no-auth");
 
     firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
+      // console.log("Firebase current user", firebase.auth().currentUser);
+      if (firebase.auth().currentUser) {
         auth.style.display = "block";
         noAuth.style.display = "none";
       } else {
@@ -14,3 +15,14 @@ import './firebase-authentication.js';
       }
     });
   });
+
+const logoutBtn = document.querySelector('#logout-btn');
+logoutBtn.addEventListener('click', e => {
+  e.preventDefault();
+  firebase.auth().signOut().then(() => {
+    // console.log('Sign-out successful.');
+  }).catch((error) => {
+    // console.log('Sign-out error', error);
+  });
+  window.location = "index.html";
+})

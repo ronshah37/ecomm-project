@@ -9,5 +9,3 @@ Lighthouse report,
 https://validator.w3.org/ report,
 
 ![image](https://user-images.githubusercontent.com/17617465/116829186-4f003580-ab71-11eb-8f8b-b5033211c4cd.png)
-
-Test.
