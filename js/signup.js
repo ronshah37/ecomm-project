@@ -1,4 +1,4 @@
-import './firebase-authentication.js';
+import "./firebase-authentication.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     const firstname = document.getElementById("firstname");
@@ -10,35 +10,35 @@ document.addEventListener("DOMContentLoaded", function () {
     const db = firebase.firestore();
 
     function addUser(uid, first, last) {
-      db.collection("Users")
-        .doc(uid)
-        .set({
-          firstname: first,
-          lastname: last,
-          user: uid,
-          timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        })
-        .then(function () {
-          console.log("User added to database!");
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
+        db.collection("Users")
+            .doc(uid)
+            .set({
+                firstname: first,
+                lastname: last,
+                user: uid,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            })
+            .then(function () {
+                console.log("User added to database!");
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
     }
 
     register.addEventListener("click", function () {
-      if (email.value && password.value) {
-        firebase
-          .auth()
-          .createUserWithEmailAndPassword(email.value, password.value)
-          .then(function (data) {
-            const user = firebase.auth().currentUser;
+        if (email.value && password.value) {
+            firebase
+                .auth()
+                .createUserWithEmailAndPassword(email.value, password.value)
+                .then(function (data) {
+                    const user = firebase.auth().currentUser;
 
-            addUser(user.uid, firstname.value, lastname.value);
-          })
-          .catch(function (error) {
-            console.error(error);
-          });
-      }
+                    addUser(user.uid, firstname.value, lastname.value);
+                })
+                .catch(function (error) {
+                    console.error(error);
+                });
+        }
     });
-  });
+});

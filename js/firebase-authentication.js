@@ -9,7 +9,7 @@ var firebaseConfig = {
     projectId: "wddm-120-project-nerdystore",
     storageBucket: "wddm-120-project-nerdystore.appspot.com",
     messagingSenderId: "1070101125970",
-    appId: "1:1070101125970:web:54d2b989276a42ce1c788b"
+    appId: "1:1070101125970:web:54d2b989276a42ce1c788b",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

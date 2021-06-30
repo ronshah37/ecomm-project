@@ -1,267 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product | MALM</title>
-    <meta
-      name="Siesta - MALM - High bed frame/2 storage boxes, Queen"
-      content="Sista | MALM | High bed frame/2 storage boxes, Queen"
-    />
-    <meta name="author" content="Shreya Shah" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/product.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product | MALM</title>
+        <meta
+            name="Siesta - MALM - High bed frame/2 storage boxes, Queen"
+            content="Sista | MALM | High bed frame/2 storage boxes, Queen"
+        />
+        <meta name="author" content="Shreya Shah" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/product.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-    />
-  </head>
-  <body>
-    <header class="page-header">
-      <a href="index.html" class="logo">
-        <img src="img/siesta-mobile.png" alt="logo" />
-      </a>
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary" class="navigation">
-        <button class="toggle-menu" id="toggle-menu">
-          <span class="menu-icon material-icons-round">menu</span>
-          <span class="close-icon material-icons-round">close</span>
-        </button>
-
-        <ul class="menu" id="menu">
-          <li class="dropdown">
-            <a class="menu-links" href="#">Products</a>
-            <div class="dropdown-content">
-              <a href="#">Beds</a>
-              <a href="#">Sofa beds</a>
-              <a href="#">Mattresses</a>
-            </div>
-          </li>
-          <li><a class="menu-links" href="#">Offers</a></li>
-          <li><a class="menu-links" href="#">What's New</a></li>
-          <li><a class="menu-links" href="#">My Profile</a></li>
-        </ul>
-      </nav>
-
-      <!-- Search for a product (non-functional) -->
-      <div class="search-container">
-        <form class="search">
-          <label>
-            <input type="search" name="find" id="find" placeholder="Search" />
-          </label>
-        </form>
-      </div>
-      <div class="additional-links">
-        <a href="#">
-          <span class="material-icons-round favorite_border"> </span>
-        </a>
-        <a href="#">
-          <span class="material-icons-round shopping-cart">
-            shopping_cart
-          </span>
-        </a>
-      </div>
-    </header>
-    <hr />
-    <main class="products">
-      <!-- Filtering product form -->
-      <h2 class="subheading">Product details</h2>
-      <section>
-        <!-- Product 1 -->
-        <article class="product">
-          <header class="product-header">
-            <div class="container">
-              <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img class="gallery" src="img/bed-mobile/black.webp" />
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img class="gallery" src="img/bed-large/grey-2.webp" />
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img class="gallery" src="img/product/image-2.webp" />
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img class="gallery" src="img/product/image-3.webp" />
-              </div>
-
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-
-              <div class="row">
-                <div class="column">
-                  <img
-                    class="gallery img-bg cursor"
-                    src="img/bed-mobile/black.webp"
-                    onclick="currentSlide(1)"
-                    alt="Black bed"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="gallery img-bg cursor"
-                    src="img/bed-mobile/grey-2.webp"
-                    onclick="currentSlide(2)"
-                    alt="Grey bed in room"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="gallery img-bg cursor"
-                    src="img/product/image-2.webp"
-                    onclick="currentSlide(3)"
-                    alt="Black bed close up"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="gallery img-bg cursor"
-                    src="img/product/image-3.webp"
-                    onclick="currentSlide(4)"
-                    alt="Bed with mattress"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="product-details">
-              <h3>MALM</h3>
-              <p>High bed frame/2 storage boxes, Queen</p>
-              <data value="356"><strong>$356.00</strong></data>
-              <p>
-                A simple arrangement that is equally appealing from all angles –
-                put the bed on its own or with the headboard against a wall. Add
-                MALM bed storage boxes on casters if you need more room for
-                extra bedding.
-              </p>
-              <div class="ratings">
-                <span class="material-icons-round star-rate"> star_rate </span>
-                <span class="material-icons-round star-rate"> star_rate </span>
-                <span class="material-icons-round star-rate"> star_rate </span>
-                <span class="material-icons-round star-rate"> star_rate </span>
-                <span class="material-icons-round star-rate"> star_half </span>
-                <span class="total-ratings">(26 ratings)</span>
-              </div>
-              <hr />
-              <p><strong>Size</strong></p>
-              <p>Queen</p>
-              <hr />
-              <p><strong>Availability</strong></p>
-              <p>In-store</p>
-              <hr />
-              <p><strong>Colors</strong></p>
-              <button class="color-buttons white">White</button>
-              <button class="color-buttons black">Black</button>
-              <button class="color-buttons beige">Beige</button>
-              <div class="add-buttons">
-                <button type="button" class="main-button add-cart">
-                  <span class="material-icons-round"> add_shopping_cart </span>
-                  Add to Cart
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+        />
+    </head>
+    <body>
+        <header class="page-header">
+            <a href="index.html" class="logo">
+                <img src="img/siesta-mobile.png" alt="logo" />
+            </a>
+            <!-- Navigation menu and toggle button (non-functional) -->
+            <nav aria-label="Primary" class="navigation">
+                <button class="toggle-menu" id="toggle-menu">
+                    <span class="menu-icon material-icons-round">menu</span>
+                    <span class="close-icon material-icons-round">close</span>
                 </button>
-                <button type="button" class="main-button add-wishlist">
-                  <span class="material-icons-round add-fav"
-                    >favorite_border</span
-                  >
-                  Add to wishlist
-                </button>
-              </div>
+
+                <ul class="menu" id="menu">
+                    <li class="dropdown">
+                        <a class="menu-links" href="#">Products</a>
+                        <div class="dropdown-content">
+                            <a href="#">Beds</a>
+                            <a href="#">Sofa beds</a>
+                            <a href="#">Mattresses</a>
+                        </div>
+                    </li>
+                    <li><a class="menu-links" href="#">Offers</a></li>
+                    <li><a class="menu-links" href="#">What's New</a></li>
+                    <li><a class="menu-links" href="#">My Profile</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search for a product (non-functional) -->
+            <div class="search-container">
+                <form class="search">
+                    <label>
+                        <input
+                            type="search"
+                            name="find"
+                            id="find"
+                            placeholder="Search"
+                        />
+                    </label>
+                </form>
             </div>
-          </header>
-        </article>
-      </section>
-    </main>
+            <div class="additional-links">
+                <a href="#">
+                    <span class="material-icons-round favorite_border"> </span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round shopping-cart">
+                        shopping_cart
+                    </span>
+                </a>
+            </div>
+        </header>
+        <hr />
+        <main class="products">
+            <!-- Filtering product form -->
+            <h2 class="subheading">Product details</h2>
+            <section>
+                <!-- Product 1 -->
+                <article class="product">
+                    <header class="product-header">
+                        <div class="container">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img
+                                    class="gallery"
+                                    src="img/bed-mobile/black.webp"
+                                />
+                            </div>
 
-    <aside class="questions">
-      <h3>Questions & Answers:</h3>
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img
+                                    class="gallery"
+                                    src="img/bed-large/grey-2.webp"
+                                />
+                            </div>
 
-      <p>
-        <strong>
-          "How much weight can the queen size hold?" asked by Christie</strong
-        >
-      </p>
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img
+                                    class="gallery"
+                                    src="img/product/image-2.webp"
+                                />
+                            </div>
 
-      <hr />
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 4</div>
+                                <img
+                                    class="gallery"
+                                    src="img/product/image-3.webp"
+                                />
+                            </div>
 
-      <p>
-        A: "The weight capacity of the pre-selected queen-size platform bed is
-        500 pounds." Ronald from Siesta on Apr 20, 2021
-      </p>
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
 
-      <hr />
+                            <div class="row">
+                                <div class="column">
+                                    <img
+                                        class="gallery img-bg cursor"
+                                        src="img/bed-mobile/black.webp"
+                                        onclick="currentSlide(1)"
+                                        alt="Black bed"
+                                    />
+                                </div>
+                                <div class="column">
+                                    <img
+                                        class="gallery img-bg cursor"
+                                        src="img/bed-mobile/grey-2.webp"
+                                        onclick="currentSlide(2)"
+                                        alt="Grey bed in room"
+                                    />
+                                </div>
+                                <div class="column">
+                                    <img
+                                        class="gallery img-bg cursor"
+                                        src="img/product/image-2.webp"
+                                        onclick="currentSlide(3)"
+                                        alt="Black bed close up"
+                                    />
+                                </div>
+                                <div class="column">
+                                    <img
+                                        class="gallery img-bg cursor"
+                                        src="img/product/image-3.webp"
+                                        onclick="currentSlide(4)"
+                                        alt="Bed with mattress"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3>MALM</h3>
+                            <p>High bed frame/2 storage boxes, Queen</p>
+                            <data value="356"><strong>$356.00</strong></data>
+                            <p>
+                                A simple arrangement that is equally appealing
+                                from all angles – put the bed on its own or with
+                                the headboard against a wall. Add MALM bed
+                                storage boxes on casters if you need more room
+                                for extra bedding.
+                            </p>
+                            <div class="ratings">
+                                <span class="material-icons-round star-rate">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round star-rate">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round star-rate">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round star-rate">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round star-rate">
+                                    star_half
+                                </span>
+                                <span class="total-ratings">(26 ratings)</span>
+                            </div>
+                            <hr />
+                            <p><strong>Size</strong></p>
+                            <p>Queen</p>
+                            <hr />
+                            <p><strong>Availability</strong></p>
+                            <p>In-store</p>
+                            <hr />
+                            <p><strong>Colors</strong></p>
+                            <button class="color-buttons white">White</button>
+                            <button class="color-buttons black">Black</button>
+                            <button class="color-buttons beige">Beige</button>
+                            <div class="add-buttons">
+                                <button
+                                    type="button"
+                                    class="main-button add-cart"
+                                >
+                                    <span class="material-icons-round">
+                                        add_shopping_cart
+                                    </span>
+                                    Add to Cart
+                                </button>
+                                <button
+                                    type="button"
+                                    class="main-button add-wishlist"
+                                >
+                                    <span class="material-icons-round add-fav"
+                                        >favorite_border</span
+                                    >
+                                    Add to wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+            </section>
+        </main>
 
-      <p><strong>Q: "Is the box spring required?" asked by Taylor</strong></p>
-      <p>
-        A: "The box spring is not required." Paolo from Siesta on Apr 17, 2021
-      </p>
+        <aside class="questions">
+            <h3>Questions & Answers:</h3>
 
-      <hr />
-      <p>
-        <strong> Q: "Does the bed require a box spring?" asked by Cindy</strong>
-      </p>
+            <p>
+                <strong>
+                    "How much weight can the queen size hold?" asked by
+                    Christie</strong
+                >
+            </p>
 
-      <p>
-        A: "The bed does not require a box spring." Rose Shiell from Siesta on
-        Apr 17, 2021
-      </p>
-      <a href="#" class="underline-link"
-        >See all questions and answers &#8594;</a
-      >
-    </aside>
-    <hr />
-    <footer class="page-footer">
-      <nav aria-label="Legal" class="footer-nav">
-        <button type="button" class="main-button mobile-app">
-          Install the Siesta Mobile App
-        </button>
-        <ul class="social-media">
-          <li>
-            <a href="#"
-              ><img
-                src="img/svg/facebook-square-brands.svg"
-                alt="Facebook logo"
-                width="32"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="img/svg/instagram-square-brands.svg"
-                alt="Instagram logo"
-                width="32"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="img/svg/twitter-square-brands.svg"
-                alt="Twitter logo"
-                width="32"
-            /></a>
-          </li>
-        </ul>
-        <ul class="legal">
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-        <p class="copyright">Copyright © Siesta - 2021</p>
-      </nav>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+            <hr />
+
+            <p>
+                A: "The weight capacity of the pre-selected queen-size platform
+                bed is 500 pounds." Ronald from Siesta on Apr 20, 2021
+            </p>
+
+            <hr />
+
+            <p>
+                <strong
+                    >Q: "Is the box spring required?" asked by Taylor</strong
+                >
+            </p>
+            <p>
+                A: "The box spring is not required." Paolo from Siesta on Apr
+                17, 2021
+            </p>
+
+            <hr />
+            <p>
+                <strong>
+                    Q: "Does the bed require a box spring?" asked by
+                    Cindy</strong
+                >
+            </p>
+
+            <p>
+                A: "The bed does not require a box spring." Rose Shiell from
+                Siesta on Apr 17, 2021
+            </p>
+            <a href="#" class="underline-link"
+                >See all questions and answers &#8594;</a
+            >
+        </aside>
+        <hr />
+        <footer class="page-footer">
+            <nav aria-label="Legal" class="footer-nav">
+                <button type="button" class="main-button mobile-app">
+                    Install the Siesta Mobile App
+                </button>
+                <ul class="social-media">
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/svg/facebook-square-brands.svg"
+                                alt="Facebook logo"
+                                width="32"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/svg/instagram-square-brands.svg"
+                                alt="Instagram logo"
+                                width="32"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/svg/twitter-square-brands.svg"
+                                alt="Twitter logo"
+                                width="32"
+                        /></a>
+                    </li>
+                </ul>
+                <ul class="legal">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Accessibility Policy</a></li>
+                </ul>
+                <p class="copyright">Copyright © Siesta - 2021</p>
+            </nav>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>

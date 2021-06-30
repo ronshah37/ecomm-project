@@ -1,4 +1,4 @@
-import './firebase-authentication.js';
+import "./firebase-authentication.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     const firstname = document.getElementById("firstname");
@@ -10,45 +10,45 @@ document.addEventListener("DOMContentLoaded", function () {
     let userRef = null;
 
     update.addEventListener("click", function () {
-      if (firstname.value && lastname.value) {
-        updateUser(userRef.uid, firstname.value, lastname.value);
-      }
+        if (firstname.value && lastname.value) {
+            updateUser(userRef.uid, firstname.value, lastname.value);
+        }
     });
 
     function updateUser(uid, first, last) {
-      db.collection("Users")
-        .doc(uid)
-        .update({
-          firstname: first,
-          lastname: last,
-        })
-        .then(function () {
-          console.log("User updated!");
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
+        db.collection("Users")
+            .doc(uid)
+            .update({
+                firstname: first,
+                lastname: last,
+            })
+            .then(function () {
+                console.log("User updated!");
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
     }
 
     function getUser(uid) {
-      db.collection("Users")
-        .doc(uid)
-        .get()
-        .then(function (doc) {
-          firstname.value = doc.data().firstname;
-          lastname.value = doc.data().lastname;
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
+        db.collection("Users")
+            .doc(uid)
+            .get()
+            .then(function (doc) {
+                firstname.value = doc.data().firstname;
+                lastname.value = doc.data().lastname;
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
     }
 
     firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        userRef = user;
-        getUser(user.uid);
-      } else {
-        window.location = "login.html";
-      }
+        if (user) {
+            userRef = user;
+            getUser(user.uid);
+        } else {
+            window.location = "login.html";
+        }
     });
-  });
+});
