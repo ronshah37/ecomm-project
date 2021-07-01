@@ -32,7 +32,7 @@
                 />
             </a>
             <!-- Navigation menu and toggle button (non-functional) -->
-            <nav id="no-auth" aria-label="Primary" class="navigation">
+            <nav aria-label="Primary" class="navigation">
                 <button class="toggle-menu" id="toggle-menu">
                     <span class="menu-icon material-icons-round">menu</span>
                     <span class="close-icon material-icons-round">close</span>
@@ -49,32 +49,12 @@
                     </li>
                     <li><a class="menu-links" href="#">Offers</a></li>
                     <li><a class="menu-links" href="#">What's New</a></li>
-                    <li>
+                    <li id="no-auth">
                         <a class="menu-links" href="login.html"
                             >Login/ Sign up</a
                         >
                     </li>
-                </ul>
-            </nav>
-
-            <nav id="auth" aria-label="Primary" class="navigation">
-                <button class="toggle-menu" id="toggle-menu">
-                    <span class="menu-icon material-icons-round">menu</span>
-                    <span class="close-icon material-icons-round">close</span>
-                </button>
-
-                <ul class="menu" id="menu">
-                    <li class="dropdown">
-                        <a class="menu-links" href="#">Products</a>
-                        <div class="dropdown-content">
-                            <a href="#">Beds</a>
-                            <a href="#">Sofa beds</a>
-                            <a href="#">Mattresses</a>
-                        </div>
-                    </li>
-                    <li><a class="menu-links" href="#">Offers</a></li>
-                    <li><a class="menu-links" href="#">What's New</a></li>
-                    <li class="dropdown">
+                    <li id="auth" class="dropdown">
                         <a class="menu-links" href="#">My Profile</a>
                         <div class="dropdown-content">
                             <a href="accountdetails.html">Account Details</a>
