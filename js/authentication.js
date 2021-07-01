@@ -1,4 +1,5 @@
 import "./firebase-authentication.js";
+import "./authentication-common.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     const auth = document.getElementById("auth");

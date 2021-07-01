@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(function () {
                 console.log("User added to database!");
+                alert("User successfully registered!!");
             })
             .catch(function (error) {
                 console.error(error);
@@ -37,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     addUser(user.uid, firstname.value, lastname.value);
                 })
                 .catch(function (error) {
-                    console.error(error);
+                    alert(error.message);
+                    console.error(error.message);
                 });
         }
     });

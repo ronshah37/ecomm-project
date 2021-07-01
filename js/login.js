@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     const user = firebase.auth().currentUser;
                 })
                 .catch(function (error) {
-                    console.error(error);
+                    alert(error.message);
+                    console.error(error.message);
                 });
         }
     });

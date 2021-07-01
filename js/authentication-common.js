@@ -8,6 +8,7 @@ logoutBtn.addEventListener("click", (e) => {
             // console.log('Sign-out successful.');
         })
         .catch((error) => {
+            alert(error.message);
             // console.log('Sign-out error', error);
             // An error happened.
         });

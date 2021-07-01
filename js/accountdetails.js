@@ -25,8 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(function () {
                 console.log("User updated!");
+                alert("User details successfully updated!");
             })
             .catch(function (error) {
+                alert(error.message);
                 console.error(error);
             });
     }
@@ -40,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 lastname.value = doc.data().lastname;
             })
             .catch(function (error) {
+                alert(error.message);
                 console.error(error);
             });
     }
