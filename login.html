@@ -7,6 +7,7 @@
         <title>login</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/authentication.css" />
     </head>
     <body>
         <header class="page-header">
@@ -76,18 +77,30 @@
                 </a>
             </div>
         </header>
-
+        <hr />
         <main>
-            <section>
+            <section class="login">
                 <h1>Login</h1>
-                Email:
-                <input type="text" id="email" />
-                <br /><br />
-                password:
-                <input type="password" id="password" />
-                <br /><br />
-                <input type="submit" value="Login" id="login" />
-                <p>No Account? <a href="signup.html"> Create One! </a></p>
+                <div class="login-details">
+                    <input
+                        type="text"
+                        id="email"
+                        placeholder="Email"
+                        required="required"
+                        size="30"
+                    />
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required="required"
+                        size="30"
+                    />
+                    <button type="submit" value="Login" id="login" class="btn">
+                        Login
+                    </button>
+                    <p>No Account? <a href="signup.html"> Create One! </a></p>
+                </div>
             </section>
         </main>
         <hr />

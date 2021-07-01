@@ -1,0 +1,41 @@
+.login {
+    padding: 1em;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+.login-details > input {
+    display: block;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.login h1 {
+    color: darkblue;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.signup {
+    padding: 1em;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+.signup-details > input {
+    display: block;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.signup h1 {
+    color: darkblue;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-align: center;
+}

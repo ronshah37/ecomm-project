@@ -7,6 +7,7 @@
         <title>Account</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/authentication.css" />
     </head>
     <body>
         <header class="page-header">
@@ -80,15 +81,26 @@
         </header>
 
         <main>
-            <section>
-                <h1>Account</h1>
-                First Name:
-                <input type="text" id="firstname" />
-                <br /><br />
-                Last Name:
-                <input type="text" id="lastname" />
-                <br /><br />
-                <input type="submit" value="Update" id="update" />
+            <section class="login">
+                <h1>Account Details</h1>
+                <div class="">
+                    <p>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" />
+                    </p>
+                    <p>
+                        <label for="firstname">Last Name:</label>
+                        <input type="text" id="lastname" />
+                    </p>
+                    <button
+                        type="submit"
+                        value="Update"
+                        id="update"
+                        class="btn"
+                    >
+                        Update
+                    </button>
+                </div>
             </section>
         </main>
         <hr />

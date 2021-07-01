@@ -7,6 +7,7 @@
         <title>Create an account</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/authentication.css" />
     </head>
     <body>
         <header class="page-header">
@@ -78,21 +79,45 @@
         </header>
 
         <main>
-            <section>
+            <section class="signup">
                 <h1>Create an account</h1>
-                First Name:
-                <input type="text" id="firstname" />
-                <br /><br />
-                Last Name:
-                <input type="text" id="lastname" />
-                <br /><br />
-                Email:
-                <input type="text" id="email" />
-                <br /><br />
-                password:
-                <input type="password" id="password" />
-                <br /><br />
-                <input type="submit" value="Create Account" id="register" />
+                <div class="signup-details">
+                    <input
+                        type="text"
+                        id="firstname"
+                        placeholder="First Name"
+                        required="required"
+                        size="30"
+                    />
+
+                    <input
+                        type="text"
+                        id="lastname"
+                        placeholder="Last Name"
+                        required="required"
+                        size="30"
+                    />
+
+                    <input
+                        type="text"
+                        id="email"
+                        placeholder="Email"
+                        required="required"
+                        size="30"
+                    />
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required="required"
+                        size="30"
+                    />
+
+                    <button type="submit" id="register" class="btn">
+                        Register
+                    </button>
+                </div>
             </section>
         </main>
         <hr />
