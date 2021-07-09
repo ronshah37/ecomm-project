@@ -11,6 +11,6 @@
 
 ### Team members:
 
-Ronak Shah
-Shreya Shah
-Shubham Singh
+- Ronak Shah
+- Shreya Shah
+- Shubham Singh
