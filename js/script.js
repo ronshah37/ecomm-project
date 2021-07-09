@@ -1,149 +1,15 @@
-const products = [
-    {
-        name: `MALM`,
-        description: `High bed frame/2 storage boxes, Queen`,
-        amount: 356,
-        ratings: 4.5,
-        type: `storage`,
-        color: `black`,
-        total_ratings: `26`,
-        images: [
-            `img/bed-large/black.webp`,
-            `img/bed-mobile/black.webp`,
-            `img/bed-large/black-2.webp`,
-            `img/bed-mobile/black-2.webp`,
-        ],
-        alt: `Black large bed with storage`,
-    },
-    {
-        name: `HEMNES`,
-        description: `Bed frame, Queen`,
-        amount: 578,
-        ratings: 5,
-        type: `storage`,
-        color: `white`,
-        total_ratings: `81`,
-        images: [
-            `img/bed-large/white.webp`,
-            `img/bed-mobile/white.webp`,
-            `img/bed-large/white-2.webp`,
-            `img/bed-mobile/white-2.webp`,
-        ],
-        alt: `White bed without storage`,
-    },
-    {
-        name: `SOMBRE`,
-        description: `Upholstered bed frame, Queen`,
-        amount: 159,
-        ratings: 2,
-        type: `full`,
-        color: `grey`,
-        total_ratings: `6`,
-        images: [
-            `img/bed-large/grey.webp`,
-            `img/bed-mobile/grey.webp`,
-            `img/bed-large/grey-2.webp`,
-            `img/bed-mobile/grey-2.webp`,
-        ],
-        alt: `Grey large bed with storage`,
-    },
-    {
-        name: `KQITE`,
-        description: `Bed frame, Full`,
-        amount: 492,
-        ratings: 4,
-        type: `full`,
-        color: `beige`,
-        total_ratings: `47`,
-        images: [
-            `img/bed-large/beige.webp`,
-            `img/bed-mobile/beige.webp`,
-            `img/bed-large/beige-2.webp`,
-            `img/bed-mobile/beige-2.webp`,
-        ],
-        alt: `Beige large bed with storage`,
-    },
-    {
-        name: `IOSEU`,
-        description: `High bed, Twin`,
-        amount: 156,
-        ratings: 3.5,
-        type: `twin`,
-        color: `white`,
-        total_ratings: `9`,
-        images: [
-            `img/bed-large/twin-white-2.webp`,
-            `img/bed-mobile/twin-white-2.webp`,
-            `img/bed-large/twin-white.webp`,
-            `img/bed-mobile/twin-white.webp`,
-        ],
-        alt: `White twin bed with storage`,
-    },
-    {
-        name: `NIESTA`,
-        description: `Metal frame bed, Twin`,
-        amount: 98,
-        ratings: 1,
-        type: `twin`,
-        color: `black`,
-        total_ratings: `3`,
-        images: [
-            `img/bed-large/metal-2.webp`,
-            `img/bed-large/metal-2.webp`,
-            `img/bed-large/twin-metal.webp`,
-            `img/bed-mobile/twin-metal.webp`,
-        ],
-        alt: `Metal twin bed without storage`,
-    },
-    {
-        name: `KLAIR`,
-        description: `Low Profile Platform Bed, Twin`,
-        amount: 234,
-        ratings: 5,
-        type: `twin`,
-        color: `black`,
-        total_ratings: `89`,
-        images: [
-            `img/bed-large/blue-twin.webp`,
-            `img/bed-mobile/blue-twin.webp`,
-            `img/bed-large/blue-twin-2.webp`,
-            `img/bed-mobile/blue-twin-2.webp`,
-        ],
-        alt: `Blue colored twin bed`,
-    },
-    {
-        name: `BUSHWICK`,
-        description: `Full bunk bed`,
-        amount: 657,
-        ratings: 3,
-        type: `kids`,
-        color: `grey`,
-        total_ratings: `23`,
-        images: [
-            `img/bed-large/kids-2.webp`,
-            `img/bed-mobile/kids-2.webp`,
-            `img/bed-large/kids.webp`,
-            `img/bed-mobile/kids.webp`,
-        ],
-        alt: `Kids bed with storage`,
-    },
-    {
-        name: `ARROW`,
-        description: `Twin over full bunk bed`,
-        amount: 356,
-        ratings: 4,
-        type: `kids`,
-        color: `white`,
-        total_ratings: `12`,
-        images: [
-            `img/bed-large/kids-white.webp`,
-            `img/bed-mobile/kids-white.webp`,
-            `img/bed-large/kids-white-2.webp`,
-            `img/bed-mobile/kids-white-2.webp`,
-        ],
-        alt: `White colored kids bed`,
-    },
-];
+import "./firebase-authentication.js";
+
+const db = firebase.firestore();
+
+db.collection("Products").get().then((querySnapshot) => {
+const products = []
+querySnapshot.docs.forEach(doc => {
+    // console.log(typeof(doc.data()))
+    products.push(doc.data());
+})
+
+console.log(products)
 
 const allFilters = {
     type: [],
@@ -412,3 +278,9 @@ const plusSlides = (n) => {
 const currentSlide = (n) => {
     showSlides((slideIndex = n));
 };
+
+
+    // const markers = []
+    
+    console.log(products)
+})
