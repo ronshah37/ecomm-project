@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const login = document.getElementById("login");
 
   // Authenticate user and log in
-  login.addEventListener("click", function () {
+  login.addEventListener("click", function (e) {
+    e.preventDefault();
     if (email.value && password.value) {
       firebase
         .auth()

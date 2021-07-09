@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Create user event
 
-  register.addEventListener("click", function () {
+  register.addEventListener("click", function (e) {
+    e.preventDefault();
     if (email.value && password.value) {
       firebase
         .auth()
