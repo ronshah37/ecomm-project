@@ -7,3 +7,10 @@
 - Ability to update the profile details after logging in.
 - Option to log out.
 - Appropriate error messages.
+
+
+### Team members:
+
+Ronak Shah
+Shreya Shah
+Shubham Singh
