@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(function () {
         console.log("User added to database!");
         alert("User successfully registered!!");
+        window.location.href = "index.html";
       })
       .catch(function (error) {
         console.error(error);
