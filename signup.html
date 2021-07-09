@@ -1,169 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Create an account</title>
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/authentication.css" />
-    </head>
-    <body>
-        <header class="page-header">
-            <a href="index.html" class="logo">
-                <!-- <img src="img/siesta-mobile.png" alt="logo" /> -->
-                <img
-                    class="product"
-                    srcset="
-                        img/siestaa.png       1920w,
-                        img/siestaa.png        960w,
-                        img/siesta-mobile.png  480w
-                    "
-                    sizes="	(min-width: 1920px) 500px,
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an account</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/authentication.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="logo">
+        <img
+          class="product"
+          srcset="
+            img/siestaa.png       1920w,
+            img/siestaa.png        960w,
+            img/siesta-mobile.png  480w
+          "
+          sizes="	(min-width: 1920px) 500px,
       						(min-width: 800px) 500px,
       											480px"
-                    src="img/siesta-mobile.png"
-                    alt="Siesta logo"
-                />
-            </a>
-            <!-- Navigation menu and toggle button (non-functional) -->
-            <nav id="no-auth" aria-label="Primary" class="navigation">
-                <button class="toggle-menu" id="toggle-menu">
-                    <span class="menu-icon material-icons-round">menu</span>
-                    <span class="close-icon material-icons-round">close</span>
-                </button>
+          src="img/siesta-mobile.png"
+          alt="Siesta logo"
+        />
+      </a>
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <nav id="no-auth" aria-label="Primary" class="navigation">
+        <button class="toggle-menu" id="toggle-menu">
+          <span class="menu-icon material-icons-round">menu</span>
+          <span class="close-icon material-icons-round">close</span>
+        </button>
 
-                <ul class="menu" id="menu">
-                    <li class="dropdown">
-                        <a class="menu-links" href="#">Products</a>
-                        <div class="dropdown-content">
-                            <a href="#">Beds</a>
-                            <a href="#">Sofa beds</a>
-                            <a href="#">Mattresses</a>
-                        </div>
-                    </li>
-                    <li><a class="menu-links" href="#">Offers</a></li>
-                    <li><a class="menu-links" href="#">What's New</a></li>
-                    <li>
-                        <a class="menu-links" href="login.html"
-                            >Login/ Sign up</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Search for a product (non-functional) -->
-            <div class="search-container">
-                <form class="search">
-                    <label>
-                        <input
-                            type="search"
-                            name="find"
-                            id="find"
-                            placeholder="Search"
-                        />
-                    </label>
-                </form>
+        <ul class="menu" id="menu">
+          <li class="dropdown">
+            <a class="menu-links" href="#">Products</a>
+            <div class="dropdown-content">
+              <a href="#">Beds</a>
+              <a href="#">Sofa beds</a>
+              <a href="#">Mattresses</a>
             </div>
-            <div class="additional-links">
-                <a href="#">
-                    <span class="material-icons-round favorite_border"> </span>
-                </a>
-                <a href="#">
-                    <span class="material-icons-round shopping-cart">
-                        shopping_cart
-                    </span>
-                </a>
-            </div>
-        </header>
-        <hr />
-        <main>
-            <section class="signup">
-                <h1>Create an account</h1>
-                <div class="signup-details">
-                    <input
-                        type="text"
-                        id="firstname"
-                        placeholder="First Name"
-                        required="required"
-                        size="30"
-                    />
+          </li>
+          <li><a class="menu-links" href="#">Offers</a></li>
+          <li><a class="menu-links" href="#">What's New</a></li>
+          <li>
+            <a class="menu-links" href="login.html">Login/ Sign up</a>
+          </li>
+        </ul>
+      </nav>
 
-                    <input
-                        type="text"
-                        id="lastname"
-                        placeholder="Last Name"
-                        required="required"
-                        size="30"
-                    />
+      <!-- Search for a product (non-functional) -->
+      <div class="search-container">
+        <form class="search">
+          <label>
+            <input type="search" name="find" id="find" placeholder="Search" />
+          </label>
+        </form>
+      </div>
+      <div class="additional-links">
+        <a href="#">
+          <span class="material-icons-round favorite_border"> </span>
+        </a>
+        <a href="#">
+          <span class="material-icons-round shopping-cart">
+            shopping_cart
+          </span>
+        </a>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <!-- Create an account UI -->
+      <section class="signup">
+        <h1>Create an account</h1>
+        <div class="signup-details">
+          <input
+            type="text"
+            id="firstname"
+            placeholder="First Name"
+            required="required"
+            size="30"
+          />
 
-                    <input
-                        type="text"
-                        id="email"
-                        placeholder="Email"
-                        required="required"
-                        size="30"
-                    />
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Last Name"
+            required="required"
+            size="30"
+          />
 
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="Password"
-                        required="required"
-                        size="30"
-                    />
+          <input
+            type="text"
+            id="email"
+            placeholder="Email"
+            required="required"
+            size="30"
+          />
 
-                    <button type="submit" id="register" class="btn">
-                        Register
-                    </button>
-                </div>
-            </section>
-        </main>
-        <hr />
-        <footer class="page-footer">
-            <nav aria-label="Legal" class="footer-nav">
-                <button type="button" class="main-button mobile-app">
-                    Install the Siesta Mobile App
-                </button>
-                <ul class="social-media">
-                    <li>
-                        <a href="#"
-                            ><img
-                                src="img/svg/facebook-square-brands.svg"
-                                alt="Facebook logo"
-                                width="32"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><img
-                                src="img/svg/instagram-square-brands.svg"
-                                alt="Instagram logo"
-                                width="32"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><img
-                                src="img/svg/twitter-square-brands.svg"
-                                alt="Twitter logo"
-                                width="32"
-                        /></a>
-                    </li>
-                </ul>
-                <ul class="legal">
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Accessibility Policy</a></li>
-                </ul>
-                <p class="copyright">Copyright © Siesta - 2021</p>
-            </nav>
-        </footer>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required="required"
+            size="30"
+          />
 
-        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
-        <script src="js/signup.js" type="module"></script>
-    </body>
+          <button type="submit" id="register" class="btn">Register</button>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="page-footer">
+      <nav aria-label="Legal" class="footer-nav">
+        <button type="button" class="main-button mobile-app">
+          Install the Siesta Mobile App
+        </button>
+        <ul class="social-media">
+          <li>
+            <a href="#"
+              ><img
+                src="img/svg/facebook-square-brands.svg"
+                alt="Facebook logo"
+                width="32"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="img/svg/instagram-square-brands.svg"
+                alt="Instagram logo"
+                width="32"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="img/svg/twitter-square-brands.svg"
+                alt="Twitter logo"
+                width="32"
+            /></a>
+          </li>
+        </ul>
+        <ul class="legal">
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility Policy</a></li>
+        </ul>
+        <p class="copyright">Copyright © Siesta - 2021</p>
+      </nav>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="js/signup.js" type="module"></script>
+  </body>
 </html>
