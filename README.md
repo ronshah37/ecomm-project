@@ -1,11 +1,17 @@
-# Web Design & Development 1
-## E-Comm Webstore: PART 2
+## E-commerce Nerdy Store
 
-Lighthouse report,
+### Functionalities:
 
-![image](https://user-images.githubusercontent.com/17617465/116829055-b9fd3c80-ab70-11eb-8a3f-68b564a6e76c.png)
+- Login/Sign Up
+- Authentication when logging in using Firebase authentication.
+- Ability to update the profile details after logging in.
+- Option to log out.
+- Appropriate error messages.
+- Loading product data from the Firebase storage
 
 
-https://validator.w3.org/ report,
+### Team members:
 
-![image](https://user-images.githubusercontent.com/17617465/116829186-4f003580-ab71-11eb-8f8b-b5033211c4cd.png)
+- Ronak Shah
+- Shreya Shah
+- Shubham Singh
