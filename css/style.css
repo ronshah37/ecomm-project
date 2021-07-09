@@ -132,7 +132,7 @@ input:checked + label {
 }
 
 .custom-check >input:checked {
-  background-image: url(../img/svg/checkbox.svg);
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/wddm-120-project-nerdystore.appspot.com/o/img%2Fsvg%2Fcheckbox.svg?alt=media&token=31c3fa01-d599-4f56-b232-be1a53965b0b");
 } */
 
 .custom-radio {
@@ -154,7 +154,7 @@ input:checked + label {
 }
 
 .custom-radio >input:checked {
-  background-image: url(../img/svg/radio.svg);
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/wddm-120-project-nerdystore.appspot.com/o/img%2Fsvg%2Fradio.svg?alt=media&token=54362e37-4851-4e93-8871-c525eafa3cda");
 }
 
 .shop-now {
@@ -199,7 +199,7 @@ input:checked + label {
   background-color: #d4d4d4;
   height: 25em;
   padding: 1em;
-  background-image: url("../img/background/small.webp");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/wddm-120-project-nerdystore.appspot.com/o/img%2Fbackground%2Fsmall.webp?alt=media&token=3558502d-1eb8-405f-b1f5-1c6100f14680");
 }
 
 .nav-toggle {
@@ -260,7 +260,7 @@ input[type=search] {
   font-size: 1em;
   width: 70%;
   background-color: var(--main-bg-color);
-  background-image: url('../img/search-bar/1x/search.png');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/wddm-120-project-nerdystore.appspot.com/o/img%2Fsearch-bar%2F1x%2Fsearch.png?alt=media&token=74986dfb-62db-4f3b-b3d8-e333531839f5');
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -593,7 +593,7 @@ color:var(--icon-color);
     background-color: #d4d4d4;
     height: 25em;
     padding: 1em;
-    background-image: url("../img/background/medium.webp");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/wddm-120-project-nerdystore.appspot.com/o/img%2Fbackground%2Fmedium.webp?alt=media&token=8af438c3-2099-4d75-8c6e-1fca2d8a2d5c");
   }
 
 .shop-now:hover {
@@ -782,7 +782,7 @@ color:var(--icon-color);
 @media screen and (min-width: 90em) {
 
   .banner {
-    background-image: url("../img/background/large.webp");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/wddm-120-project-nerdystore.appspot.com/o/img%2Fbackground%2Flarge.webp?alt=media&token=155ccc33-9b04-452a-8f7b-0bbd8346290e");
   }
 
  .products, .page-footer {
