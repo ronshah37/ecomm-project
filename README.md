@@ -7,6 +7,7 @@
 - Ability to update the profile details after logging in.
 - Option to log out.
 - Appropriate error messages.
+- Loading product data from the Firebase storage
 
 
 ### Team members:
