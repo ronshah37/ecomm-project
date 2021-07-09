@@ -1,20 +1,35 @@
 .login {
     padding: 1em;
     border-style: solid;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 6em auto;
     width: 30em;
 }
 
 .login-details > input {
     display: block;
-    margin-top: 1em;
     padding: 0.5em;
+    width: 20em;
+    margin: 1em auto;
+}
+
+button#login, button#register {
+    margin-left: 10em;
+}
+
+button#login:hover, button#register:hover {
+    background-color: #9b349b;
+    color:  #ffffff;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2em hsl(var(--cart-wishlist-button-color), 45deg);
+  }
+
+
+.signup-link {
+    margin-left: 8em;
 }
 
 .login h1 {
-    color: darkblue;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #7f187f;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -22,20 +37,19 @@
 .signup {
     padding: 1em;
     border-style: solid;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 6em auto;
     width: 30em;
 }
 
 .signup-details > input {
     display: block;
-    margin-top: 1em;
     padding: 0.5em;
+    width: 20em;
+    margin: 1em auto;
 }
 
 .signup h1 {
-    color: darkblue;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #7f187f;
     letter-spacing: 1px;
     text-align: center;
 }
